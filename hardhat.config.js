@@ -27,9 +27,13 @@ module.exports = {
       //accounts: [process.env.privateKey]
     },
     goerli: {
+      url: process.env.REACT_APP_ALCHEMY_GOERLI_API_URL,
+      accounts: [ process.env.REACT_APP_PRIVATE_GOERLI_KEY ]
+    },
+    sepolia: {
       url: process.env.REACT_APP_ALCHEMY_API_URL,
       accounts: [ process.env.REACT_APP_PRIVATE_KEY ]
-    }
+    }    
   },
   solidity: {
     version: "0.8.4",
